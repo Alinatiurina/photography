@@ -1,11 +1,28 @@
-const btn = document.querySelector(".solid-menu-btn")
-const closeBtn = document.querySelector(".mobile-close-btn")
+const btn = document.querySelector(".solid-menu-btn");
+const closeBtn = document.querySelector(".mobile-close-btn");
+const mob = document.querySelector(".mobile-menu");
+const mobLi = document.querySelector('.mobile-menu-nav-list');
+const mainDoc = document.querySelector('main');
 
 
-function mobileMenu() {
- const mob = document.querySelector(".mobile-menu");
- mob.classList.toggle("is-open") 
+function mobileMenuOpen() {
+ mob.classList.add("is-open") 
 }
+function mobileMenuClose() {
+ mob.classList.remove("is-open") 
+}
+btn.addEventListener("click", mobileMenuOpen);
+closeBtn.addEventListener("click", mobileMenuClose);
 
-btn.addEventListener("click", mobileMenu);
-closeBtn.addEventListener("click", mobileMenu)
+mainDoc.addEventListener('click', (e) => {
+
+    if (e.target !== mob) {
+        mob.classList.remove("is-open")
+        return;
+    }
+})
+
+mobLi.addEventListener('click', (e) => {
+        mob.classList.remove("is-open")
+        return;
+})
