@@ -7,6 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Caveat&family=Playfair+Display&family=Source+Serif+4:wght@400;600&display=swap"
       rel="stylesheet"
     />
@@ -273,95 +281,45 @@
             </ul>
           </div>
         </section>
-        <!-- portfolio -->
-        <section class="portfolio-section" id="portfolio">
-          <div class="container">
-            <h2 class="portfolio-section-title">Портфоліо</h2>
-            <div class="portfolio-cards">
-              <div class="portfolio-card">
-                <div class="box">
-                  <img
-                    class="portfolio-img"
-                    src="./images/wedding.jpg"
-                    alt="wedding photo"
-                  />
-                  <p class="overlay-text overlay">
-                    Фотозйомка вашого весільного дня.
-                  </p>
-                </div>
-                <p class="portfolio-section-text">Весільна фотосесія</p>
+        <!-- Portfolio -->
+        <section>
+          <h2 class="portfolio-section-title">Портфоліо</h2>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide portf-card">
+                <img class="port-img" src="./images/wedding.jpg" alt="" />
+                <p class="port-text">Весільна фотосесія</p>
               </div>
-              <div class="portfolio-card">
-                <div class="box">
-                  <img class="portfolio-img" src="./images/family.jpg" alt="" />
-                  <p class="overlay-text overlay">
-                    Сімейна фотосесія-це можливість провести час разом з
-                    найріднішими.
-                  </p>
-                </div>
-                <p class="portfolio-section-text">Сімейна фотосесія</p>
+              <div class="swiper-slide portf-card">
+                <img class="port-img" src="./images/individual.jpg" alt="" />
+                <p class="port-text">Індивідуальна фотосесія</p>
               </div>
-              <div class="portfolio-card">
-                <div class="box">
-                  <img
-                    class="portfolio-img"
-                    src="./images/children.jpg"
-                    alt=""
-                  />
-                  <p class="overlay-text overlay">
-                    Фотосесія для дитини. <br />
-                    Допоможу підібрати ідею, локацію. За необхідності можу
-                    надати потрібний реквізит та одяг для дитини.
-                  </p>
-                </div>
-                <p class="portfolio-section-text">Дитяча фотосесія</p>
+              <div class="swiper-slide portf-card">
+                <img class="port-img" src="./images/family.jpg" alt="" />
+                <p class="port-text">Сімейна фотосесія</p>
               </div>
-              <div class="portfolio-card">
-                <div class="box">
-                  <img
-                    class="portfolio-img"
-                    src="./images/individual.jpg"
-                    alt=""
-                  />
-                  <p class="overlay-text overlay">
-                    Допоможе тобі виразити свою неповторну індивідуальність та
-                    справжні емоції. Ідея обирається індивідуально в залежності
-                    від ваших побажань.
-                  </p>
-                </div>
-                <p class="portfolio-section-text">Індивідуальна фотосесія</p>
+              <div class="swiper-slide portf-card">
+                <img class="port-img" src="./images/children.jpg" alt="" />
+                <p class="port-text">Дитяча фотосесія</p>
               </div>
-              <div class="portfolio-card">
-                <div class="box">
-                  <img
-                    class="portfolio-img"
-                    src="./images/reportage.jpg"
-                    alt=""
-                  />
-                  <p class="overlay-text overlay">
-                    Фотозйомка будь-яких ваших свят. <br />
-                    Допоможу зберегти ваші найважливіші події в якісних фото.
-                  </p>
-                </div>
-                <p class="portfolio-section-text">Репортажна зйомка</p>
+              <div class="swiper-slide portf-card">
+                <img class="port-img" src="./images/reportage.jpg" alt="" />
+                <p class="port-text">Репортажна зйомка</p>
               </div>
-              <div class="portfolio-card">
-                <div class="box">
-                  <img
-                    class="portfolio-img"
-                    src="./images/content.jpg"
-                    alt=""
-                  />
-                  <p class="overlay-text overlay">
-                    Це можливість отримати багато різноманітного якісного
-                    персонального контенту за короткий час. <br />
-                    Якісні фото вашого продукту збільшують його цінність для
-                    клієнта <br />
-                    Якісні особисті фото збільшують довіру покупця <br />
-                  </p>
-                </div>
-                <p class="portfolio-section-text">Контент-зйомка</p>
+              <div class="swiper-slide portf-card">
+                <img class="port-img" src="./images/content.jpg" alt="" />
+                <p class="port-text">Контент-зйомка</p>
               </div>
+            </div>
+            <div class="swiper-button-prev">
+              <svg class="button-prev" width="75" height="75">
+                <use href="./icon.svg#skroll"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next">
+              <svg class="button-next" width="75" height="75">
+                <use href="./icon.svg#skroll"></use>
+              </svg>
             </div>
           </div>
         </section>
@@ -413,6 +371,54 @@
             </div>
           </div>
         </section>
+        <!-- FAQ-->
+        <!-- <section>
+          <h2 class="price-title">Поширені запитання</h2>
+          <div class="acc-container">
+            <div class="acc-item">
+              <button class="accordion acc-title">
+                Чи потрібна передплата?
+              </button>
+              <div class="panel">
+                <p>
+                  На час воєнного стану я працюю без передплати. Але прошу
+                  відповідально ставитися до бронювання, поважати мій час та не
+                  відміняти зйомку без поважний причин.
+                </p>
+              </div>
+            </div>
+            <div class="acc-item">
+              <button class="accordion acc-title">Section 2</button>
+              <div class="panel">
+                <p>Lorem ipsum...</p>
+              </div>
+            </div>
+            <div class="acc-item">
+              <button class="accordion acc-title">Section 3</button>
+              <div class="panel">
+                <p>Lorem ipsum...</p>
+              </div>
+            </div>
+            <div class="acc-item">
+              <button class="accordion acc-title">Section 1</button>
+              <div class="panel">
+                <p>Lorem ipsum...</p>
+              </div>
+            </div>
+            <div class="acc-item">
+              <button class="accordion acc-title">Section 2</button>
+              <div class="panel">
+                <p>Lorem ipsum...</p>
+              </div>
+            </div>
+            <div class="acc-item">
+              <button class="accordion acc-title">Section 3</button>
+              <div class="panel">
+                <p>Lorem ipsum...</p>
+              </div>
+            </div>
+          </div>
+        </section> -->
         <!-- instagram -->
         <section>
           <div class="container instagram" id="contact">
@@ -520,6 +526,10 @@
         </div>
       </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+    <script src="./js/gallery.js" type="module"></script>
+    <script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js"></script>
   </body>
 </html>
