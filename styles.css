@@ -88,6 +88,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 20px;
 }
 /* .page-container {
   min-height: 100vh;
@@ -260,7 +261,7 @@ main {
 }
 .about-me-container {
   width: 300px;
-  padding: 20px;
+  padding-top: 20px;
   margin-top: 80px;
 }
 .about-me-container-all {
@@ -293,7 +294,7 @@ main {
   opacity: 0.7;
   background: #daaf5c;
   bottom: 10px;
-  left: 200px;
+  left: 235px;
 }
 .about-me-text-container {
   display: flex;
@@ -305,8 +306,8 @@ main {
 }
 .about-me-img {
   position: absolute;
-  width: 185px;
-  height: 199px;
+  width: 200px;
+  height: 215px;
   margin: 16px;
   top: -40px;
   margin-left: 50px;
@@ -459,7 +460,6 @@ main {
 .work-order-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: end;
   gap: 15px;
   z-index: 1;
 }
@@ -701,8 +701,7 @@ main {
   transition: 0.4s;
   box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.25);
 }
-.accordion:hover {
-}
+
 .accordion:after {
   content: url("data:image/svg+xml;charset=UTF-8,<svg  width='20' height='20' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M11 1.5L6 6.5L1 1.5' stroke='gray' stroke-width='2'/></svg>");
   font-size: 13px;
