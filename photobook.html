@@ -7,6 +7,54 @@
     <link rel="stylesheet" href="./Photobook.css" />
   </head>
   <body>
+    <header class="page-header">
+      <!-- <div class="container"> -->
+      <div class="header-container">
+        <nav class="page-nav">
+          <a href="./index.html" class="nav-logo-header">Фотограф Кривий Ріг</a>
+          <ul class="menu">
+            <li class="nav-list-item">
+              <a href="./index.html#about-me" class="nav-link menu-position"
+                >Про мене</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="./index.html#portfolio" class="nav-link">Портфоліо</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./index.html#price" class="nav-link">Прайс</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./wedding.html" class="nav-link">Прайс весілля</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="./index.html#contact" class="nav-link">Контакти</a>
+            </li>
+            <li class="social-link-item">
+              <a
+                href="https://www.instagram.com/alina.tiyrina/"
+                target="_blank"
+                class="nav-link-cocial"
+                ><svg class="social-icon" width="16" height="16">
+                  <use href="./icon.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button type="button" class="solid-menu-btn">
+            <svg
+              class="solid-menu"
+              width="24"
+              height="24"
+              aria-label="icon-heroicons-solid_menu"
+            >
+              <use href="./icon.svg#icon-Nav"></use>
+            </svg>
+          </button>
+        </nav>
+        <!-- </div> -->
+      </div>
+    </header>
     <div class="container">
       <h1 class="title">Обери свою фотокнигу</h1>
       <div class="text-conteiner">
@@ -37,5 +85,29 @@
         })();
       </script>
     </div>
+    <section class="best-time-section">
+      <div class="container best-time-container">
+        <h2 class="best-time-title line-position">
+          Найкращий час для фотосесії - просто зараз!
+        </h2>
+        <div class="best-time-reserve">
+          <p class="best-time-text">Забронюй зручним способом</p>
+          <a
+            class="best-time-link"
+            target="_blank"
+            href="https://www.instagram.com/alina.tiyrina/"
+            >Написати в
+            <svg class="social-icon" width="16" height="16">
+              <use href="./icon.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a class="best-time-link" href="tel:+380964341701">Подзвонити</a>
+        </div>
+        <div>
+          <p>м. Кривий Ріг</p>
+          <p>т. +380 96 434 17 01</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
