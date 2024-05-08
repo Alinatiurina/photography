@@ -44,10 +44,10 @@ const swiper = new Swiper('.swiper', {
   mousewheel: true,
   slidesPerView: 1,
     speed: 1000,
-  effect: "coverflow",
-  coverflowEffect: {
-    rotate: 30,
-  },
+  // effect: "coverflow",
+  // coverflowEffect: {
+  //   rotate: 30,
+  // },
   breakpoints: {
     320: {
       slidesPerView: 1,

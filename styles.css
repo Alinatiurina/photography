@@ -449,7 +449,7 @@ main {
     height: 2px;
     background: #fdf2d5;
     position: absolute;
-    bottom: -80px;
+    bottom: -33px;
     right: 0;
   }
 }
@@ -469,6 +469,7 @@ main {
 .work-order-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 15px;
   z-index: 1;
 }
@@ -703,12 +704,13 @@ main {
   color: #444;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 300px;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
-  box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.25);
+  border: 1px solid #000;
+  /* box-shadow: 2px 4px 6px 0px rgba(0, 0, 0, 0.25); */
 }
 
 .accordion:after {
@@ -727,6 +729,7 @@ main {
   flex-direction: column;
   justify-content: center;
   width: 300px;
+  /* flex-basis: calc((100% - 24px) / 2); */
 }
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active,
@@ -737,6 +740,7 @@ main {
 /* Style the accordion panel. Note: hidden by default */
 .panel {
   padding: 0 18px;
+  width: 300px;
   background-color: white;
   max-height: 0;
   overflow: hidden;
@@ -747,7 +751,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 550px;
+    /* width: 550px; */
   }
 }
 /* =================Price============= */
