@@ -9,7 +9,7 @@ a {
 }
 ul,
 ol {
-  list-style: none;
+  list-style: disc;
 }
 button {
   cursor: pointer;
@@ -241,14 +241,12 @@ main {
 }
 .dop {
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   font-weight: 400;
   gap: 40px;
 }
 @media screen and (min-width: 720px) {
   .price-section {
-    height: 1151px;
     background-image: linear-gradient(
         rgba(255, 255, 255, 0.8),
         rgba(255, 255, 255, 0.8)
